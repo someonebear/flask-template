@@ -17,8 +17,8 @@ def sign_up():
     firstName = request.form.get("firstName")
     password1 = request.form.get("password1")
     password2 = request.form.get("password2")
-    fields = [email, firstName, password1, password2]
 
+    
     if len(email) < 4:
       flash("Email must be greater than 3 characters.", category="error")
     elif len(firstName) < 2:
